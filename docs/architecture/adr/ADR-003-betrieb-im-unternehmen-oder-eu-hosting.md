@@ -1,11 +1,5 @@
-# ADR-003: Lokaler Betrieb, sonst EU-Hosting
+# ADR-003: Lokaler Betrieb
 
-**Status:** vorgeschlagen
-
-**Kontext:** DSGVO und Franz' Wunsch, dass die Daten im Unternehmen bleiben.
-
-**Entscheidung:** Das System läuft mit lokalem Sprachmodell im Unternehmen. Wer keine eigene Hardware hat, nutzt einen Anbieter mit Rechenzentrum in der EU.
-
-**Alternativen:** Cloud-KI außerhalb der EU (Datenschutz nicht gewährleistet).
-
-**Konsequenzen:** Daten bleiben im Haus. Lokale Modelle sind aber langsamer und brauchen Hardware.
+- **Entscheidung:** Alles läuft lokal mit Ollama, notfalls bei einem EU-Anbieter.
+- **Grund:** DSGVO, Daten bleiben in der Firma.
+- **Nachteil:** Lokale Modelle sind langsamer.

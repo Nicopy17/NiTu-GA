@@ -1,12 +1,9 @@
-# User Journey: Franz erstellt den Monatsbericht
+# User Journey
 
-| Schritt | Franz … | System … | Gefühl |
-|---|---|---|---|
-| 1 | bekommt die Excel-Datei von der Buchhaltung | – | 😐 |
-| 2 | wählt seine Vorlage „Monatsbericht“ | zeigt die gespeicherte Vorlage | 🙂 |
-| 3 | lädt die Excel-Datei hoch | liest die Zahlen ein, fragt bei unklaren Spalten nach | 😐 |
-| 4 | schreibt „Erstelle den Bericht für Oktober“ | füllt Zahlen und Diagramme in die Vorlage | 🙂 |
-| 5 | prüft einzelne Zahlen | zeigt zu jeder Zahl die Quelle | 😊 |
-| 6 | lässt die Buchhaltung freigeben und exportiert | erzeugt HTML | 😊 |
+1. Franz bekommt die Excel-Datei von der Buchhaltung.
+2. Er wählt seine Vorlage und lädt die Excel-Datei hoch.
+3. Er schreibt: „Erstelle den Bericht für Oktober.“
+4. Er prüft die Zahlen anhand der angezeigten Quellen.
+5. Er exportiert den Bericht als HTML.
 
-**Kritischer Punkt:** Schritt 3–4. Falsche Zuordnung oder erfundene Zahlen zerstören das Vertrauen.
+Kritisch ist Schritt 3: Stimmen die Zahlen nicht, verliert Franz das Vertrauen.

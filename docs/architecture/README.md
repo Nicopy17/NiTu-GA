@@ -2,14 +2,26 @@
 
 ## ADRs
 
-| Nr. | Entscheidung | Status |
-|---|---|---|
-| [ADR-001](adr/ADR-001-template-basierte-berichtserstellung.md) | Bericht aus Vorlage mit Platzhaltern | vorgeschlagen |
-| [ADR-002](adr/ADR-002-rag-statt-training.md) | RAG statt Training, Zahlen nie vom Sprachmodell | vorgeschlagen |
-| [ADR-003](adr/ADR-003-betrieb-im-unternehmen-oder-eu-hosting.md) | Lokaler Betrieb, sonst EU-Hosting | vorgeschlagen |
-| [ADR-004](adr/ADR-004-technologie-stack-aus-den-labs.md) | Stack aus den Labs | vorgeschlagen |
+- [ADR-001](adr/ADR-001-template-basierte-berichtserstellung.md) Bericht aus Vorlage
+- [ADR-002](adr/ADR-002-rag-statt-training.md) RAG statt Training
+- [ADR-003](adr/ADR-003-betrieb-im-unternehmen-oder-eu-hosting.md) Lokaler Betrieb
+- [ADR-004](adr/ADR-004-technologie-stack-aus-den-labs.md) Stack aus den Labs
 
-## C4
+## C4 System Context
 
-- [System Context](c4/system-context.md)
-- [Container](c4/container.md)
+```mermaid
+flowchart LR
+    Franz[Franz] --> NiTu[NiTu-GA]
+    Pruefer[Prüfer/in] --> NiTu
+    NiTu --> LLM[Sprachmodell]
+```
+
+## C4 Container
+
+```mermaid
+flowchart LR
+    Franz[Franz] --> App[Streamlit-App]
+    App --> DB[(SQLite)]
+    App --> Chroma[(ChromaDB)]
+    App --> LLM[Ollama]
+```
