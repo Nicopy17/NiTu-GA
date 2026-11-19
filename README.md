@@ -1,35 +1,18 @@
-# NiTu-GA – KI-Berichtsgenerator für Finanz-Monatsberichte
+# NiTu-GA – KI-Berichtsgenerator
 
-Projekt im Rahmen von Technische Informatik 2 (Lab Prof. Baumgartl, HS Esslingen).
+TI2-Projekt (HS Esslingen) von Nico und Turahan.
 
-## Projektidee
+**Idee:** Geschäftsführer bauen ihren monatlichen Finanzbericht jedes Mal per Copy-Paste neu, obwohl sich nur Zahlen ändern.
+NiTu-GA nimmt den alten Bericht als Vorlage, liest die neuen Zahlen aus Excel und erstellt per Chat-Auftrag den aktuellen Bericht.
 
-Geschäftsführer im Mittelstand bauen ihre monatlichen Finanzberichte jedes Mal per Copy-Paste neu,
-obwohl sich meist nur ein paar Zahlen ändern. NiTu-GA soll aus einer vorhandenen Vorlage und den
-aktuellen Daten (z. B. aus Excel oder ERP) per Chat-Auftrag einen aktualisierten Bericht erzeugen.
-Das Layout bleibt erhalten, jede Zahl ist mit ihrer Quelle nachvollziehbar und die Firmendaten
-bleiben im Unternehmen.
+## Dokumentation
 
-Kernablauf:
-
-1. Vorlage auswählen und speichern
-2. Datenquelle anfügen
-3. Auftrag per Chat geben („Baue mir einen Finanzbericht“)
-4. Zahlen und Diagramme werden aktualisiert, das Layout bleibt gleich
-5. Export als bearbeitbares HTML
-
-## Team
-
-- Nico
-- Turahan
-
-## Struktur
-
-| Ordner | Inhalt |
+| Thema | Datei |
 |---|---|
-| `docs/analysis/` | Ergebnisse der Analyse: Persona Canvas, Architecture Inception Canvas (AIC), Fotos |
+| Persona | [docs/analysis/persona.md](docs/analysis/persona.md) |
+| Architecture Inception Canvas | [docs/analysis/aic.md](docs/analysis/aic.md) |
+| User Journey | [docs/requirements/user-journey.md](docs/requirements/user-journey.md) |
+| Epics und User Stories | [docs/requirements/epics-und-user-stories.md](docs/requirements/epics-und-user-stories.md) |
+| ADRs und C4 | [docs/architecture/](docs/architecture/README.md) |
 
-## Arbeitsweise
-
-Jede Aufgabe wird als GitHub Issue erfasst, in einem eigenen Branch bearbeitet und per Pull Request
-(`closes #<nr>`) nach `main` gemergt.
+Arbeitsweise: Issue → Branch → Pull Request (`closes #nr`) → Merge.
